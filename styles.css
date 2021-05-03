@@ -1,0 +1,127 @@
+body {
+    background-color: white;
+  }
+  .color-box {
+    height: 20px;
+    background-color: 
+      white;
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  .header-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    background-color: #519be0;
+    color: white;
+    min-height: 500px;
+    font-size: 36px; 
+    margin-bottom: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0px 10px;
+    
+  }
+  
+  
+  .column-section {
+    background-color: black;
+    margin: 0 auto;
+  }
+  
+  h1 {
+    max-width: 250px;
+  }
+  
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .flex-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    text-align: center;
+    background-color: white;
+    color: black;
+  
+  }
+  
+  .flex-item-left {
+    max-width: 275px;
+    /* background-color: black; */
+    padding: 25px 50px;
+    flex: 100%;
+  }
+  
+  .color-box1 {
+    min-height: 20px;
+    margin: 0 auto;
+    width: 100%;
+    background-color: #519be0;
+  }
+  
+  .flex-item-center {
+    max-width: 275px;
+    /* background-color: orange; */
+    padding: 25px 50px;
+    flex: 100%;
+  }
+
+  .color-box2 {
+    min-height: 20px;
+    margin: 0 auto;
+    width: 100%;
+    background-color: salmon;
+  }
+  
+  .flex-item-right {
+    max-width: 275px;
+    /* background-color: dodgerblue; */
+    padding: 25px 50px;
+    flex: 100%;
+  }
+
+  .color-box3 {
+    min-height: 20px;
+    margin: 0 auto;
+    width: 100%;
+    background-color: #44cfa0;
+}
+  
+  /* Responsive layout - makes a one column-layout instead of a two-column layout */
+  /* @media (min-width: 576px) {
+    .flex-item-right, .flex-item-left, .flex-item-center {
+      flex: 100%;
+    }
+    body {
+      background-color: white;
+    }
+    .flex-container {
+        background-color: white;
+    }
+  } */
+  @media screen and (min-width: 992px) {
+      .flex-item-right, .flex-item-left, .flex-item-center {
+          flex: 33%
+      }
+      .flex-container {
+          flex-direction: row;
+          background-color: black;
+          color: white;
+          align-items: flex-start;
+      }
+      .header-section {
+          background-color: #44cfa0;
+      }
+      h1 {
+          max-width: 100%;
+      }
+
+  }
